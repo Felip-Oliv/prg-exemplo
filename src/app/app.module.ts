@@ -12,6 +12,13 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { AdmComponent } from './adm/adm.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//Angular material
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -26,6 +33,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SobreComponent
   ],
   imports: [
+    MatFormFieldModule,
+    MatTableModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
