@@ -11,6 +11,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { AdmComponent } from './adm/adm.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SobreComponent } from './sobre/sobre.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
