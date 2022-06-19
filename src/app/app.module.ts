@@ -19,6 +19,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { SeletorComponent } from './seletor/seletor.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ProdutoComponent,
     CarrinhoComponent,
     AdmComponent,
-    SobreComponent
+    SobreComponent,
+    SeletorComponent
   ],
   imports: [
     MatFormFieldModule,
