@@ -10,7 +10,7 @@
     <mat-icon class="star">star</mat-icon>
     <mat-icon class="star">star</mat-icon>
     <h2 class="home-promo-preco">{{produto.preco | formatoReal:'BRL'}}</h2>
-    <app-seletor></app-seletor>
+    <app-seletor [produto]=" produto" (eventoDeClique)="adicionarAoCarrinho($event)"></app-seletor>
     <h2 class="home-promo-titulo-desc">{{produto.desc}}</h2>
   </span>
 

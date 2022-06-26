@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
+import { Produto } from '../../models/produto.model';
+import {Item} from '../../models/item.model'
 @Component({
   selector: 'app-seletor',
   templateUrl: './seletor.component.html',
@@ -7,7 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeletorComponent implements OnInit {
   quantidade = 1;
-  constructor() { }
+
+  @Input() produto: Produto;
+  @Output() eventoDeClique: EventEmitter<Item> = new EventEmitter();
+
+  adicionarAoCarrinho(produto: Produto){
+    let item = {produto: produto, qtde: this.quantidade};
+    this.eventoDeClique.emit(item);
+    console.log(item);
+
+  }
+
+  constructor() {
+    this.produto ={} as Produto;
+  }
 
   ngOnInit(): void {
   }
@@ -24,8 +39,6 @@ export class SeletorComponent implements OnInit {
     }else{
       console.log("Não é possível remover");
     }
-
     }
-
 
 }
