@@ -11,7 +11,25 @@
 
 .cards-produto {
   display: flex;
+  flex: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .mat-card {
-  background-color: rgb(206, 18, 115);
+  background-color: rgb(0, 0, 0);
+}
+
+.card-actions{
+  display: flex;
+  justify-content: space-aroud;
+  align-items: baseline;
+}
+
+.preco{
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 15px;
+  vertical-align: middle;
 }
