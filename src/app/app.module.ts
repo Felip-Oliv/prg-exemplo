@@ -20,6 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { SeletorComponent } from './home/seletor/seletor.component';
+import { FormatoRealPipe } from './formato-real.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SeletorComponent } from './home/seletor/seletor.component';
     CarrinhoComponent,
     AdmComponent,
     SobreComponent,
-    SeletorComponent
+    SeletorComponent,
+    FormatoRealPipe
   ],
   imports: [
     MatFormFieldModule,
