@@ -13,7 +13,7 @@
     <mat-card-actions class="card-actions">
       <h3 class="preco">{{produto.preco | formatoReal:'BRL'}}</h3>
       <button mat-button>Curtir</button>
-      <button mat-button>Adicionar</button>
+      <button mat-button (click)="adicionarAoCarrinho(produto)">Adicionar</button>
     </mat-card-actions>
   </mat-card>
 </section>
