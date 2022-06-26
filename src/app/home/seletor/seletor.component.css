@@ -9,7 +9,9 @@
 }
 
 .seletor-item {
-  background-color:black;
+  background-color:rgb(255, 238, 0);
   margin-left: 3px;
+  font-size: medium;
+
 }
 
