@@ -11,7 +11,7 @@
       <p>{{produto.desc}}</p>
     </mat-card-content>
     <mat-card-actions class="card-actions">
-      <h3 class="preco">R${{produto.preco}}</h3>
+      <h3 class="preco">{{produto.preco | currency:'BRL'}}</h3>
       <button mat-button>Curtir</button>
       <button mat-button>Adicionar</button>
     </mat-card-actions>
